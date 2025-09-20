@@ -1,0 +1,64 @@
+{
+  "name": "cryptomininghub-backend",
+  "version": "1.0.0",
+  "description": "Backend API for CryptoMiningHub",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "type-check": "tsc --noEmit",
+    "db:migrate": "echo 'Database migration not implemented yet'",
+    "db:seed": "echo 'Database seeding not implemented yet'"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "mining",
+    "blockchain",
+    "api",
+    "backend"
+  ],
+  "author": "CryptoMiningHub Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "pg": "^8.11.3",
+    "redis": "^4.6.10",
+    "socket.io": "^4.7.4",
+    "axios": "^1.6.0",
+    "joi": "^17.11.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.15",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/pg": "^8.10.7",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1",
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.8",
+    "supertest": "^6.3.3",
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
