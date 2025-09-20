@@ -51,12 +51,12 @@ O CryptoMiningHub é uma solução integrada que combina:
 - Docker e Docker Compose
 - Git
 
-### **Setup Rápido**
+### **Setup Rápido com Docker (Recomendado)**
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/CryptoMiningHub.git
-cd CryptoMiningHub
+git clone https://github.com/edugenes/dashhub.git
+cd dashhub
 
 # Instale as dependências
 npm run install:all
@@ -64,8 +64,27 @@ npm run install:all
 # Configure as variáveis de ambiente
 cp .env.example .env
 
+# Inicie com Docker
+npm run docker:start
+```
+
+### **Setup Manual (Sem Docker)**
+
+```bash
+# Clone o repositório
+git clone https://github.com/edugenes/dashhub.git
+cd dashhub
+
+# Instale as dependências
+npm run install:all
+
+# Configure as variáveis de ambiente
+cp .env.example .env
+
+# Instale PostgreSQL e Redis separadamente
 # Execute o projeto
 npm run dev
+```
 ```
 
 ### **Setup Detalhado**
